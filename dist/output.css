@@ -888,10 +888,6 @@ input:checked + .toggle-bg {
   border-color: #1C64F2;
 }
 
-html.js :where([class*="taos:"]:not(.taos-init)) {
-  visibility: hidden;
-}
-
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1941,20 +1937,12 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   transition-delay: 0ms !important;
 }
 
-.delay-\[300ms\] {
-  transition-delay: 300ms;
-}
-
 .\!duration-\[0ms\] {
   transition-duration: 0ms !important;
 }
 
 .duration-700 {
   transition-duration: 700ms;
-}
-
-.duration-\[600ms\] {
-  transition-duration: 600ms;
 }
 
 .ease-in-out {

@@ -1,19 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: {
-    relative: true,
-    transform: (content) => content.replace(/taos:/g, ''),
-    files: ['./src/*.{html,js}'],
-  },
-};
-module.exports = {
-  safelist: [
-    '!duration-[0ms]',
-    '!delay-[0ms]',
-    'html.js :where([class*="taos:"]:not(.taos-init))',
-  ],
   content: ['./src/**/*.{html,js}', './node_modules/flowbite/**/*.js'],
-  plugins: [require('flowbite/plugin'), require('taos/plugin')],
+  plugins: [require('flowbite/plugin')],
 
   theme: {
     extend: {
